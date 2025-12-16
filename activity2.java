@@ -8,7 +8,7 @@ import java.util.Set;
 
 public class activity2 {
 
-	   // Initialize set with 5 initial data
+
 	    private static Set<String> initProducts() {
 	        Set<String> products = new HashSet<>();
 	        products.add("Laptop");
@@ -19,7 +19,7 @@ public class activity2 {
 	        return products;
 	    }
 
-	    // Case-insensitive exact-name search
+
 	    private static boolean containsIgnoreCase(Set<String> products, String query) {
 	        for (String p : products) {
 	            if (p.equalsIgnoreCase(query)) {
@@ -29,7 +29,6 @@ public class activity2 {
 	        return false;
 	    }
 
-	    // Returns the stored value that matched case-insensitively (for printing the exact stored name)
 	    private static String getStoredName(Set<String> products, String query) {
 	        for (String p : products) {
 	            if (p.equalsIgnoreCase(query)) {
@@ -50,8 +49,6 @@ public class activity2 {
 
 	    private static void printAll(Set<String> products) {
 	        System.out.println("All products:");
-	        // Print in arbitrary HashSet order (as per simple example).
-	        // If you want sorted, use: new java.util.TreeSet<>(products)
 	        for (String p : products) {
 	            System.out.println(p);
 	        }
