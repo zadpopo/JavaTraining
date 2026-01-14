@@ -1,0 +1,92 @@
+2026-01-14 12:40:30.154 [INFO] m4lesson.BankAccount - Deposit requested: ₱5000.0
+2026-01-14 12:40:30.160 [INFO] m4lesson.BankAccount - Deposit completed: ₱5000.0, New balance: ₱15000.0
+2026-01-14 12:40:30.160 [INFO] m4lesson.BankAccount - Withdrawal requested: ₱3000.0
+2026-01-14 12:40:30.161 [INFO] m4lesson.BankAccount - Withdrawal completed: ₱3000.0, New balance: ₱12000.0
+2026-01-14 12:40:30.161 [INFO] m4lesson.BankAccount - Deposit requested: ₱-500.0
+2026-01-14 12:40:30.161 [ERROR] m4lesson.BankAccount - Invalid deposit amount: ₱-500.0
+2026-01-14 12:40:30.162 [ERROR] m4lesson.BankAccount - Deposit failed: Deposit amount must be positive
+m4lesson.InvalidAmountException: Deposit amount must be positive
+	at HelloWorld/m4lesson.BankAccount.deposit(BankAccount.java:62)
+	at HelloWorld/m4lesson.BankAccount.lambda$2(BankAccount.java:96)
+	at HelloWorld/m4lesson.BankAccount.runTest(BankAccount.java:77)
+	at HelloWorld/m4lesson.BankAccount.main(BankAccount.java:96)
+2026-01-14 12:40:30.176 [INFO] m4lesson.BankAccount - Withdrawal requested: ₱20000.0
+2026-01-14 12:40:30.177 [WARN] m4lesson.BankAccount - Insufficient funds: ₱12000.0 available
+2026-01-14 12:40:30.177 [ERROR] m4lesson.BankAccount - Withdrawal failed: Insufficient funds for withdrawal
+m4lesson.InsufficientFundsException: Insufficient funds for withdrawal
+	at HelloWorld/m4lesson.BankAccount.withdraw(BankAccount.java:49)
+	at HelloWorld/m4lesson.BankAccount.lambda$3(BankAccount.java:99)
+	at HelloWorld/m4lesson.BankAccount.runTest(BankAccount.java:77)
+	at HelloWorld/m4lesson.BankAccount.main(BankAccount.java:99)
+2026-01-14 12:40:30.178 [INFO] m4lesson.BankAccount - Deposit requested: ₱60000.0
+2026-01-14 12:40:30.178 [WARN] m4lesson.BankAccount - Large deposit: ₱60000.0 - requires verification
+2026-01-14 12:40:30.178 [INFO] m4lesson.BankAccount - Deposit completed: ₱60000.0, New balance: ₱72000.0
+2026-01-14 16:49:59.462 [INFO] m4lesson.BankAccount - Deposit requested: ₱5000.0
+2026-01-14 16:49:59.467 [INFO] m4lesson.BankAccount - Deposit completed: ₱5000.0, New balance: ₱15000.0
+2026-01-14 16:49:59.467 [INFO] m4lesson.BankAccount - Withdrawal requested: ₱3000.0
+2026-01-14 16:49:59.467 [INFO] m4lesson.BankAccount - Withdrawal completed: ₱3000.0, New balance: ₱12000.0
+2026-01-14 16:49:59.467 [INFO] m4lesson.BankAccount - Deposit requested: ₱-500.0
+2026-01-14 16:49:59.467 [ERROR] m4lesson.BankAccount - Invalid deposit amount: ₱-500.0
+2026-01-14 16:49:59.468 [ERROR] m4lesson.BankAccount - Deposit failed: Deposit amount must be positive
+m4lesson.InvalidAmountException: Deposit amount must be positive
+	at HelloWorld/m4lesson.BankAccount.deposit(BankAccount.java:61)
+	at HelloWorld/m4lesson.BankAccount.lambda$2(BankAccount.java:95)
+	at HelloWorld/m4lesson.BankAccount.runTest(BankAccount.java:76)
+	at HelloWorld/m4lesson.BankAccount.main(BankAccount.java:95)
+2026-01-14 16:49:59.471 [INFO] m4lesson.BankAccount - Withdrawal requested: ₱20000.0
+2026-01-14 16:49:59.471 [WARN] m4lesson.BankAccount - Insufficient funds: ₱12000.0 available
+2026-01-14 16:49:59.472 [ERROR] m4lesson.BankAccount - Withdrawal failed: Insufficient funds for withdrawal
+m4lesson.InsufficientFundsException: Insufficient funds for withdrawal
+	at HelloWorld/m4lesson.BankAccount.withdraw(BankAccount.java:48)
+	at HelloWorld/m4lesson.BankAccount.lambda$3(BankAccount.java:98)
+	at HelloWorld/m4lesson.BankAccount.runTest(BankAccount.java:76)
+	at HelloWorld/m4lesson.BankAccount.main(BankAccount.java:98)
+2026-01-14 16:49:59.472 [INFO] m4lesson.BankAccount - Deposit requested: ₱60000.0
+2026-01-14 16:49:59.472 [WARN] m4lesson.BankAccount - Large deposit: ₱60000.0 - requires verification
+2026-01-14 16:49:59.472 [INFO] m4lesson.BankAccount - Deposit completed: ₱60000.0, New balance: ₱72000.0
+2026-01-14 16:50:24.606 [INFO] m4lesson.BankAccount - Deposit requested: ₱5000.0
+2026-01-14 16:50:24.609 [INFO] m4lesson.BankAccount - Deposit completed: ₱5000.0, New balance: ₱15000.0
+2026-01-14 16:50:24.610 [INFO] m4lesson.BankAccount - Withdrawal requested: ₱3000.0
+2026-01-14 16:50:24.610 [INFO] m4lesson.BankAccount - Withdrawal completed: ₱3000.0, New balance: ₱12000.0
+2026-01-14 16:50:24.610 [INFO] m4lesson.BankAccount - Deposit requested: ₱-500.0
+2026-01-14 16:50:24.610 [ERROR] m4lesson.BankAccount - Invalid deposit amount: ₱-500.0
+2026-01-14 16:50:24.611 [ERROR] m4lesson.BankAccount - Deposit failed: Deposit amount must be positive
+m4lesson.InvalidAmountException: Deposit amount must be positive
+	at HelloWorld/m4lesson.BankAccount.deposit(BankAccount.java:61)
+	at HelloWorld/m4lesson.BankAccount.lambda$2(BankAccount.java:95)
+	at HelloWorld/m4lesson.BankAccount.runTest(BankAccount.java:76)
+	at HelloWorld/m4lesson.BankAccount.main(BankAccount.java:95)
+2026-01-14 16:50:24.614 [INFO] m4lesson.BankAccount - Withdrawal requested: ₱20000.0
+2026-01-14 16:50:24.615 [WARN] m4lesson.BankAccount - Insufficient funds: ₱12000.0 available
+2026-01-14 16:50:24.615 [ERROR] m4lesson.BankAccount - Withdrawal failed: Insufficient funds for withdrawal
+m4lesson.InsufficientFundsException: Insufficient funds for withdrawal
+	at HelloWorld/m4lesson.BankAccount.withdraw(BankAccount.java:48)
+	at HelloWorld/m4lesson.BankAccount.lambda$3(BankAccount.java:98)
+	at HelloWorld/m4lesson.BankAccount.runTest(BankAccount.java:76)
+	at HelloWorld/m4lesson.BankAccount.main(BankAccount.java:98)
+2026-01-14 16:50:24.615 [INFO] m4lesson.BankAccount - Deposit requested: ₱60000.0
+2026-01-14 16:50:24.615 [WARN] m4lesson.BankAccount - Large deposit: ₱60000.0 - requires verification
+2026-01-14 16:50:24.615 [INFO] m4lesson.BankAccount - Deposit completed: ₱60000.0, New balance: ₱72000.0
+2026-01-14 16:54:31.829 [INFO] m4lesson.BankAccount - Deposit requested: ₱5000.0
+2026-01-14 16:54:31.834 [INFO] m4lesson.BankAccount - Deposit completed: ₱5000.0, New balance: ₱15000.0
+2026-01-14 16:54:31.835 [INFO] m4lesson.BankAccount - Withdrawal requested: ₱3000.0
+2026-01-14 16:54:31.835 [INFO] m4lesson.BankAccount - Withdrawal completed: ₱3000.0, New balance: ₱12000.0
+2026-01-14 16:54:31.835 [INFO] m4lesson.BankAccount - Deposit requested: ₱-500.0
+2026-01-14 16:54:31.836 [ERROR] m4lesson.BankAccount - Invalid deposit amount: ₱-500.0
+2026-01-14 16:54:31.836 [ERROR] m4lesson.BankAccount - Deposit failed: Deposit amount must be positive
+m4lesson.InvalidAmountException: Deposit amount must be positive
+	at HelloWorld/m4lesson.BankAccount.deposit(BankAccount.java:61)
+	at HelloWorld/m4lesson.BankAccount.lambda$2(BankAccount.java:95)
+	at HelloWorld/m4lesson.BankAccount.runTest(BankAccount.java:76)
+	at HelloWorld/m4lesson.BankAccount.main(BankAccount.java:95)
+2026-01-14 16:54:31.838 [INFO] m4lesson.BankAccount - Withdrawal requested: ₱20000.0
+2026-01-14 16:54:31.838 [WARN] m4lesson.BankAccount - Insufficient funds: ₱12000.0 available
+2026-01-14 16:54:31.839 [ERROR] m4lesson.BankAccount - Withdrawal failed: Insufficient funds for withdrawal
+m4lesson.InsufficientFundsException: Insufficient funds for withdrawal
+	at HelloWorld/m4lesson.BankAccount.withdraw(BankAccount.java:48)
+	at HelloWorld/m4lesson.BankAccount.lambda$3(BankAccount.java:98)
+	at HelloWorld/m4lesson.BankAccount.runTest(BankAccount.java:76)
+	at HelloWorld/m4lesson.BankAccount.main(BankAccount.java:98)
+2026-01-14 16:54:31.839 [INFO] m4lesson.BankAccount - Deposit requested: ₱60000.0
+2026-01-14 16:54:31.839 [WARN] m4lesson.BankAccount - Large deposit: ₱60000.0 - requires verification
+2026-01-14 16:54:31.839 [INFO] m4lesson.BankAccount - Deposit completed: ₱60000.0, New balance: ₱72000.0
