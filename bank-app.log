@@ -1,0 +1,192 @@
+2026-01-15 18:32:18.149 [INFO] M4Act9.BankAccountService - Creating account for owner: John Doe
+2026-01-15 18:32:18.151 [INFO] M4Act9.BankAccountService - Account ACC001 created successfully for John Doe
+2026-01-15 18:32:18.152 [INFO] M4Act9.BankAccountService - Creating account for owner: Jane Smith
+2026-01-15 18:32:18.152 [INFO] M4Act9.BankAccountService - Account ACC002 created successfully for Jane Smith
+2026-01-15 18:32:18.152 [INFO] M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:32:18.153 [INFO] M4Act9.BankAccountService - Transfer successful: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:32:18.153 [INFO] M4Act9.BankAccountService - Transfer request: ACC001 -> ACC999, amount: 1000.0
+2026-01-15 18:32:18.153 [WARN] M4Act9.BankAccountService - Transfer failed: destination account ACC999 not found
+2026-01-15 18:32:18.154 [INFO] M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: -500.0
+2026-01-15 18:32:18.154 [WARN] M4Act9.BankAccountService - Transfer failed: invalid amount -500.0
+2026-01-15 18:32:18.167 [INFO] M4Act9.BankAccountService - Transfer request: ACC001 -> ACC001, amount: 1000.0
+2026-01-15 18:32:18.167 [WARN] M4Act9.BankAccountService - Transfer failed: same source and destination account ACC001
+2026-01-15 18:32:18.168 [INFO] M4Act9.BankAccountService - Transfer request: ACC999 -> ACC002, amount: 1000.0
+2026-01-15 18:32:18.168 [WARN] M4Act9.BankAccountService - Transfer failed: source account ACC999 not found
+2026-01-15 18:32:18.169 [INFO] M4Act9.BankAccountService - Transfer request: ACC002 -> ACC001, amount: 50000.0
+2026-01-15 18:32:18.169 [WARN] M4Act9.BankAccountService - Transfer failed: insufficient funds in account ACC002. Balance: 8000.0, Required: 50000.0
+2026-01-15 18:32:18.169 [INFO] M4Act9.BankAccountService - Creating account for owner: Bob Johnson
+2026-01-15 18:32:18.170 [WARN] M4Act9.BankAccountService - Account creation failed: account ACC001 already exists
+2026-01-15 18:32:18.170 [INFO] M4Act9.BankAccountService - Creating account for owner: Alice Brown
+2026-01-15 18:32:18.170 [WARN] M4Act9.BankAccountService - Account creation failed: account number is null or empty
+2026-01-15 18:32:18.171 [INFO] M4Act9.BankAccountService - Creating account for owner: 
+2026-01-15 18:32:18.171 [WARN] M4Act9.BankAccountService - Account creation failed: owner name is null or empty
+2026-01-15 18:32:18.172 [INFO] M4Act9.BankAccountService - Creating account for owner: Charlie Wilson
+2026-01-15 18:32:18.172 [WARN] M4Act9.BankAccountService - Account creation failed: invalid initial balance -1000.0
+2026-01-15 18:36:28.923 INFO  M4Act9.BankAccountService - Creating account for owner: John Doe
+2026-01-15 18:36:28.925 INFO  M4Act9.BankAccountService - Account ACC001 created successfully for John Doe
+2026-01-15 18:36:28.926 INFO  M4Act9.BankAccountService - Creating account for owner: Jane Smith
+2026-01-15 18:36:28.926 INFO  M4Act9.BankAccountService - Account ACC002 created successfully for Jane Smith
+2026-01-15 18:36:28.926 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:36:28.927 INFO  M4Act9.BankAccountService - Transfer successful: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:36:28.927 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC999, amount: 1000.0
+2026-01-15 18:36:28.927 WARN  M4Act9.BankAccountService - Transfer failed: destination account ACC999 not found
+2026-01-15 18:36:28.928 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: -500.0
+2026-01-15 18:36:28.928 WARN  M4Act9.BankAccountService - Transfer failed: invalid amount -500.0
+2026-01-15 18:36:28.929 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC001, amount: 1000.0
+2026-01-15 18:36:28.929 WARN  M4Act9.BankAccountService - Transfer failed: same source and destination account ACC001
+2026-01-15 18:36:28.929 INFO  M4Act9.BankAccountService - Transfer request: ACC999 -> ACC002, amount: 1000.0
+2026-01-15 18:36:28.929 WARN  M4Act9.BankAccountService - Transfer failed: source account ACC999 not found
+2026-01-15 18:36:28.930 INFO  M4Act9.BankAccountService - Transfer request: ACC002 -> ACC001, amount: 50000.0
+2026-01-15 18:36:28.930 WARN  M4Act9.BankAccountService - Transfer failed: insufficient funds in account ACC002. Balance: 8000.0, Required: 50000.0
+2026-01-15 18:36:28.930 INFO  M4Act9.BankAccountService - Creating account for owner: Bob Johnson
+2026-01-15 18:36:28.930 WARN  M4Act9.BankAccountService - Account creation failed: account ACC001 already exists
+2026-01-15 18:36:28.931 INFO  M4Act9.BankAccountService - Creating account for owner: Alice Brown
+2026-01-15 18:36:28.931 WARN  M4Act9.BankAccountService - Account creation failed: account number is null or empty
+2026-01-15 18:36:28.931 INFO  M4Act9.BankAccountService - Creating account for owner: 
+2026-01-15 18:36:28.931 WARN  M4Act9.BankAccountService - Account creation failed: owner name is null or empty
+2026-01-15 18:36:28.931 INFO  M4Act9.BankAccountService - Creating account for owner: Charlie Wilson
+2026-01-15 18:36:28.931 WARN  M4Act9.BankAccountService - Account creation failed: invalid initial balance -1000.0
+2026-01-15 18:36:48.086 INFO  M4Act9.BankAccountService - Creating account for owner: John Doe
+2026-01-15 18:36:48.088 INFO  M4Act9.BankAccountService - Account ACC001 created successfully for John Doe
+2026-01-15 18:36:48.089 INFO  M4Act9.BankAccountService - Creating account for owner: Jane Smith
+2026-01-15 18:36:48.089 INFO  M4Act9.BankAccountService - Account ACC002 created successfully for Jane Smith
+2026-01-15 18:36:48.089 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:36:48.090 INFO  M4Act9.BankAccountService - Transfer successful: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:36:48.090 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC999, amount: 1000.0
+2026-01-15 18:36:48.090 WARN  M4Act9.BankAccountService - Transfer failed: destination account ACC999 not found
+2026-01-15 18:36:48.091 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: -500.0
+2026-01-15 18:36:48.091 WARN  M4Act9.BankAccountService - Transfer failed: invalid amount -500.0
+2026-01-15 18:36:48.092 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC001, amount: 1000.0
+2026-01-15 18:36:48.092 WARN  M4Act9.BankAccountService - Transfer failed: same source and destination account ACC001
+2026-01-15 18:36:48.092 INFO  M4Act9.BankAccountService - Transfer request: ACC999 -> ACC002, amount: 1000.0
+2026-01-15 18:36:48.093 WARN  M4Act9.BankAccountService - Transfer failed: source account ACC999 not found
+2026-01-15 18:36:48.093 INFO  M4Act9.BankAccountService - Transfer request: ACC002 -> ACC001, amount: 50000.0
+2026-01-15 18:36:48.093 WARN  M4Act9.BankAccountService - Transfer failed: insufficient funds in account ACC002. Balance: 8000.0, Required: 50000.0
+2026-01-15 18:36:48.094 INFO  M4Act9.BankAccountService - Creating account for owner: Bob Johnson
+2026-01-15 18:36:48.094 WARN  M4Act9.BankAccountService - Account creation failed: account ACC001 already exists
+2026-01-15 18:36:48.094 INFO  M4Act9.BankAccountService - Creating account for owner: Alice Brown
+2026-01-15 18:36:48.094 WARN  M4Act9.BankAccountService - Account creation failed: account number is null or empty
+2026-01-15 18:36:48.095 INFO  M4Act9.BankAccountService - Creating account for owner: 
+2026-01-15 18:36:48.095 WARN  M4Act9.BankAccountService - Account creation failed: owner name is null or empty
+2026-01-15 18:36:48.095 INFO  M4Act9.BankAccountService - Creating account for owner: Charlie Wilson
+2026-01-15 18:36:48.095 WARN  M4Act9.BankAccountService - Account creation failed: invalid initial balance -1000.0
+2026-01-15 18:37:17.026 INFO  M4Act9.BankAccountService - Creating account for owner: John Doe
+2026-01-15 18:37:17.028 INFO  M4Act9.BankAccountService - Account ACC001 created successfully for John Doe
+2026-01-15 18:37:17.029 INFO  M4Act9.BankAccountService - Creating account for owner: Jane Smith
+2026-01-15 18:37:17.029 INFO  M4Act9.BankAccountService - Account ACC002 created successfully for Jane Smith
+2026-01-15 18:37:17.029 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:37:17.029 INFO  M4Act9.BankAccountService - Transfer successful: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:37:17.030 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC999, amount: 1000.0
+2026-01-15 18:37:17.030 WARN  M4Act9.BankAccountService - Transfer failed: destination account ACC999 not found
+2026-01-15 18:37:17.030 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: -500.0
+2026-01-15 18:37:17.030 WARN  M4Act9.BankAccountService - Transfer failed: invalid amount -500.0
+2026-01-15 18:37:17.031 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC001, amount: 1000.0
+2026-01-15 18:37:17.031 WARN  M4Act9.BankAccountService - Transfer failed: same source and destination account ACC001
+2026-01-15 18:37:17.032 INFO  M4Act9.BankAccountService - Transfer request: ACC999 -> ACC002, amount: 1000.0
+2026-01-15 18:37:17.032 WARN  M4Act9.BankAccountService - Transfer failed: source account ACC999 not found
+2026-01-15 18:37:17.032 INFO  M4Act9.BankAccountService - Transfer request: ACC002 -> ACC001, amount: 50000.0
+2026-01-15 18:37:17.032 WARN  M4Act9.BankAccountService - Transfer failed: insufficient funds in account ACC002. Balance: 8000.0, Required: 50000.0
+2026-01-15 18:37:17.033 INFO  M4Act9.BankAccountService - Creating account for owner: Bob Johnson
+2026-01-15 18:37:17.033 WARN  M4Act9.BankAccountService - Account creation failed: account ACC001 already exists
+2026-01-15 18:37:17.033 INFO  M4Act9.BankAccountService - Creating account for owner: Alice Brown
+2026-01-15 18:37:17.033 WARN  M4Act9.BankAccountService - Account creation failed: account number is null or empty
+2026-01-15 18:37:17.033 INFO  M4Act9.BankAccountService - Creating account for owner: 
+2026-01-15 18:37:17.033 WARN  M4Act9.BankAccountService - Account creation failed: owner name is null or empty
+2026-01-15 18:37:17.034 INFO  M4Act9.BankAccountService - Creating account for owner: Charlie Wilson
+2026-01-15 18:37:17.034 WARN  M4Act9.BankAccountService - Account creation failed: invalid initial balance -1000.0
+2026-01-15 18:37:54.754 INFO  M4Act9.BankAccountService - Creating account for owner: John Doe
+2026-01-15 18:37:54.756 INFO  M4Act9.BankAccountService - Account ACC001 created successfully for John Doe
+2026-01-15 18:37:54.757 INFO  M4Act9.BankAccountService - Creating account for owner: Jane Smith
+2026-01-15 18:37:54.757 INFO  M4Act9.BankAccountService - Account ACC002 created successfully for Jane Smith
+2026-01-15 18:37:54.757 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:37:54.758 INFO  M4Act9.BankAccountService - Transfer successful: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:37:54.758 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC999, amount: 1000.0
+2026-01-15 18:37:54.758 WARN  M4Act9.BankAccountService - Transfer failed: destination account ACC999 not found
+2026-01-15 18:37:54.759 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: -500.0
+2026-01-15 18:37:54.759 WARN  M4Act9.BankAccountService - Transfer failed: invalid amount -500.0
+2026-01-15 18:37:54.760 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC001, amount: 1000.0
+2026-01-15 18:37:54.760 WARN  M4Act9.BankAccountService - Transfer failed: same source and destination account ACC001
+2026-01-15 18:37:54.761 INFO  M4Act9.BankAccountService - Transfer request: ACC999 -> ACC002, amount: 1000.0
+2026-01-15 18:37:54.761 WARN  M4Act9.BankAccountService - Transfer failed: source account ACC999 not found
+2026-01-15 18:37:54.761 INFO  M4Act9.BankAccountService - Transfer request: ACC002 -> ACC001, amount: 50000.0
+2026-01-15 18:37:54.761 WARN  M4Act9.BankAccountService - Transfer failed: insufficient funds in account ACC002. Balance: 8000.0, Required: 50000.0
+2026-01-15 18:37:54.762 INFO  M4Act9.BankAccountService - Creating account for owner: Bob Johnson
+2026-01-15 18:37:54.762 WARN  M4Act9.BankAccountService - Account creation failed: account ACC001 already exists
+2026-01-15 18:37:54.762 INFO  M4Act9.BankAccountService - Creating account for owner: Alice Brown
+2026-01-15 18:37:54.762 WARN  M4Act9.BankAccountService - Account creation failed: account number is null or empty
+2026-01-15 18:37:54.762 INFO  M4Act9.BankAccountService - Creating account for owner: 
+2026-01-15 18:37:54.762 WARN  M4Act9.BankAccountService - Account creation failed: owner name is null or empty
+2026-01-15 18:37:54.763 INFO  M4Act9.BankAccountService - Creating account for owner: Charlie Wilson
+2026-01-15 18:37:54.763 WARN  M4Act9.BankAccountService - Account creation failed: invalid initial balance -1000.0
+2026-01-15 18:38:30.612 INFO  M4Act9.BankAccountService - Creating account for owner: John Doe
+2026-01-15 18:38:30.614 INFO  M4Act9.BankAccountService - Account ACC001 created successfully for John Doe
+2026-01-15 18:38:30.615 INFO  M4Act9.BankAccountService - Creating account for owner: Jane Smith
+2026-01-15 18:38:30.615 INFO  M4Act9.BankAccountService - Account ACC002 created successfully for Jane Smith
+2026-01-15 18:38:30.615 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:38:30.615 INFO  M4Act9.BankAccountService - Transfer successful: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:38:30.616 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC999, amount: 1000.0
+2026-01-15 18:38:30.616 WARN  M4Act9.BankAccountService - Transfer failed: destination account ACC999 not found
+2026-01-15 18:38:30.616 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: -500.0
+2026-01-15 18:38:30.616 WARN  M4Act9.BankAccountService - Transfer failed: invalid amount -500.0
+2026-01-15 18:38:30.617 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC001, amount: 1000.0
+2026-01-15 18:38:30.617 WARN  M4Act9.BankAccountService - Transfer failed: same source and destination account ACC001
+2026-01-15 18:38:30.618 INFO  M4Act9.BankAccountService - Transfer request: ACC999 -> ACC002, amount: 1000.0
+2026-01-15 18:38:30.618 WARN  M4Act9.BankAccountService - Transfer failed: source account ACC999 not found
+2026-01-15 18:38:30.618 INFO  M4Act9.BankAccountService - Transfer request: ACC002 -> ACC001, amount: 50000.0
+2026-01-15 18:38:30.618 WARN  M4Act9.BankAccountService - Transfer failed: insufficient funds in account ACC002. Balance: 8000.0, Required: 50000.0
+2026-01-15 18:38:30.619 INFO  M4Act9.BankAccountService - Creating account for owner: Bob Johnson
+2026-01-15 18:38:30.619 WARN  M4Act9.BankAccountService - Account creation failed: account ACC001 already exists
+2026-01-15 18:38:30.619 INFO  M4Act9.BankAccountService - Creating account for owner: Alice Brown
+2026-01-15 18:38:30.619 WARN  M4Act9.BankAccountService - Account creation failed: account number is null or empty
+2026-01-15 18:38:30.619 INFO  M4Act9.BankAccountService - Creating account for owner: 
+2026-01-15 18:38:30.619 WARN  M4Act9.BankAccountService - Account creation failed: owner name is null or empty
+2026-01-15 18:38:30.619 INFO  M4Act9.BankAccountService - Creating account for owner: Charlie Wilson
+2026-01-15 18:38:30.620 WARN  M4Act9.BankAccountService - Account creation failed: invalid initial balance -1000.0
+2026-01-15 18:39:43.868 INFO  M4Act9.BankAccountService - Creating account for owner: John Doe
+2026-01-15 18:39:43.870 INFO  M4Act9.BankAccountService - Account ACC001 created successfully for John Doe
+2026-01-15 18:39:43.871 INFO  M4Act9.BankAccountService - Creating account for owner: Jane Smith
+2026-01-15 18:39:43.871 INFO  M4Act9.BankAccountService - Account ACC002 created successfully for Jane Smith
+2026-01-15 18:39:43.871 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:39:43.872 INFO  M4Act9.BankAccountService - Transfer successful: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:39:43.872 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC999, amount: 1000.0
+2026-01-15 18:39:43.872 WARN  M4Act9.BankAccountService - Transfer failed: destination account ACC999 not found
+2026-01-15 18:39:43.872 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: -500.0
+2026-01-15 18:39:43.872 WARN  M4Act9.BankAccountService - Transfer failed: invalid amount -500.0
+2026-01-15 18:39:43.874 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC001, amount: 1000.0
+2026-01-15 18:39:43.874 WARN  M4Act9.BankAccountService - Transfer failed: same source and destination account ACC001
+2026-01-15 18:39:43.874 INFO  M4Act9.BankAccountService - Transfer request: ACC999 -> ACC002, amount: 1000.0
+2026-01-15 18:39:43.874 WARN  M4Act9.BankAccountService - Transfer failed: source account ACC999 not found
+2026-01-15 18:39:43.875 INFO  M4Act9.BankAccountService - Transfer request: ACC002 -> ACC001, amount: 50000.0
+2026-01-15 18:39:43.875 WARN  M4Act9.BankAccountService - Transfer failed: insufficient funds in account ACC002. Balance: 8000.0, Required: 50000.0
+2026-01-15 18:39:43.875 INFO  M4Act9.BankAccountService - Creating account for owner: Bob Johnson
+2026-01-15 18:39:43.875 WARN  M4Act9.BankAccountService - Account creation failed: account ACC001 already exists
+2026-01-15 18:39:43.875 INFO  M4Act9.BankAccountService - Creating account for owner: Alice Brown
+2026-01-15 18:39:43.875 WARN  M4Act9.BankAccountService - Account creation failed: account number is null or empty
+2026-01-15 18:39:43.876 INFO  M4Act9.BankAccountService - Creating account for owner: 
+2026-01-15 18:39:43.876 WARN  M4Act9.BankAccountService - Account creation failed: owner name is null or empty
+2026-01-15 18:39:43.876 INFO  M4Act9.BankAccountService - Creating account for owner: Charlie Wilson
+2026-01-15 18:39:43.876 WARN  M4Act9.BankAccountService - Account creation failed: invalid initial balance -1000.0
+2026-01-15 18:39:45.040 INFO  M4Act9.BankAccountService - Creating account for owner: John Doe
+2026-01-15 18:39:45.042 INFO  M4Act9.BankAccountService - Account ACC001 created successfully for John Doe
+2026-01-15 18:39:45.043 INFO  M4Act9.BankAccountService - Creating account for owner: Jane Smith
+2026-01-15 18:39:45.043 INFO  M4Act9.BankAccountService - Account ACC002 created successfully for Jane Smith
+2026-01-15 18:39:45.044 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:39:45.044 INFO  M4Act9.BankAccountService - Transfer successful: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 18:39:45.045 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC999, amount: 1000.0
+2026-01-15 18:39:45.045 WARN  M4Act9.BankAccountService - Transfer failed: destination account ACC999 not found
+2026-01-15 18:39:45.045 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC002, amount: -500.0
+2026-01-15 18:39:45.045 WARN  M4Act9.BankAccountService - Transfer failed: invalid amount -500.0
+2026-01-15 18:39:45.046 INFO  M4Act9.BankAccountService - Transfer request: ACC001 -> ACC001, amount: 1000.0
+2026-01-15 18:39:45.046 WARN  M4Act9.BankAccountService - Transfer failed: same source and destination account ACC001
+2026-01-15 18:39:45.047 INFO  M4Act9.BankAccountService - Transfer request: ACC999 -> ACC002, amount: 1000.0
+2026-01-15 18:39:45.047 WARN  M4Act9.BankAccountService - Transfer failed: source account ACC999 not found
+2026-01-15 18:39:45.047 INFO  M4Act9.BankAccountService - Transfer request: ACC002 -> ACC001, amount: 50000.0
+2026-01-15 18:39:45.047 WARN  M4Act9.BankAccountService - Transfer failed: insufficient funds in account ACC002. Balance: 8000.0, Required: 50000.0
+2026-01-15 18:39:45.048 INFO  M4Act9.BankAccountService - Creating account for owner: Bob Johnson
+2026-01-15 18:39:45.048 WARN  M4Act9.BankAccountService - Account creation failed: account ACC001 already exists
+2026-01-15 18:39:45.048 INFO  M4Act9.BankAccountService - Creating account for owner: Alice Brown
+2026-01-15 18:39:45.049 WARN  M4Act9.BankAccountService - Account creation failed: account number is null or empty
+2026-01-15 18:39:45.049 INFO  M4Act9.BankAccountService - Creating account for owner: 
+2026-01-15 18:39:45.049 WARN  M4Act9.BankAccountService - Account creation failed: owner name is null or empty
+2026-01-15 18:39:45.049 INFO  M4Act9.BankAccountService - Creating account for owner: Charlie Wilson
+2026-01-15 18:39:45.049 WARN  M4Act9.BankAccountService - Account creation failed: invalid initial balance -1000.0
