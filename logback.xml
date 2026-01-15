@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>%d{HH:mm:ss.SSS} [%level] %logger{36} - %msg%n</pattern>
-        </encoder>
-    </appender>
-    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>logs/app.log</file>
-        <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%level] %logger{36} - %msg%n</pattern>
-        </encoder>
-    </appender>
-    <root level="INFO">
-        <appender-ref ref="CONSOLE"/>
-        <appender-ref ref="FILE"/>
-    </root>
+
+  <!-- Console Appender -->
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <!-- HH:mm:ss.SSS time, level, 36-char logger name, message -->
+      <pattern>%d{HH:mm:ss.SSS} [%level] %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- Daily Rolling File Appender -->
+  <appender name="DAILY_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <!-- Current active log file -->
+    <file>logs/bank-app.log</file>
+
+    <!-- How each line is formatted in the file -->
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%level] %logger{36} - %msg%n</pattern>
+    </encoder>
+
+    <!-- Roll files daily; keep up to 30 days; cap total history at 1GB -->
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- Daily archive file name -->
+      <fileNamePattern>logs/bank-app-%d{yyyy-MM-dd}.log</fileNamePattern>
+
+      <!-- Keep 30 days of history -->
+      <maxHistory>30</maxHistory>
+
+      <!-- Cap the total size of all archived logs -->
+      <totalSizeCap>1GB</totalSizeCap>
+    </rollingPolicy>
+  </appender>
+
+  <!-- Root logger -->
+  <root level="INFO">
+    <appender-ref ref="CONSOLE"/>
+    <appender-ref ref="DAILY_FILE"/>
+  </root>
+
 </configuration>
