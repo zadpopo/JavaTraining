@@ -17,22 +17,6 @@ public class App {
         }
     }
 
-    /**
-     * M6_Activity4 - EntityManager lifecycle + CRUD demo
-     * Steps per slide:
-     * 1) create Student (transient)
-     * 2) persist (managed)
-     * 3) flush (INSERT)
-     * 4) detach (detached)
-     * 5) contains() -> false
-     * 6) merge (managed again)
-     * 7) update fields
-     * 8) flush (UPDATE)
-     * 9) contains() -> true
-     * 10) remove (mark for deletion)
-     * 11) flush (DELETE)
-     * 12) contains() -> false
-     */
     static void m6Activity4Solution(EntityManager em) {
 
         em.getTransaction().begin();
