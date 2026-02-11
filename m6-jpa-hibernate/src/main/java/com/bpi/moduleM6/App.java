@@ -3,12 +3,10 @@ package com.bpi.moduleM6;
 import java.util.List;
 
 import com.bpi.module6.model.Student;
-import com.bpi.module6.uti.EntityManagerUtil; // <-- now 'util' after the rename
+import com.bpi.module6.uti.EntityManagerUtil; 
 import jakarta.persistence.EntityManager;
 
 public class App {
-
-
 
 public static void main(String[] args) {
         EntityManager em = EntityManagerUtil.getInstance().createEntityManager();
@@ -28,7 +26,7 @@ public static void main(String[] args) {
         }
     }
 
-    // Prints every student's name (field projection) — matches the first SQL line in your screenshot
+    // Prints every student's name (field projection)
     static void findStudentNames1(EntityManager em) {
         em.getTransaction().begin();
 
@@ -42,7 +40,7 @@ public static void main(String[] args) {
     }
 
     // Prints: "Number of Courses by Student with ID X: N"
-    // Uses JOIN so Hibernate emits a join in SQL (as in the screenshot)
+    // Uses JOIN so Hibernate emits a join in SQL
     static void countCoursesByStudentId1(EntityManager em, Long studentId) {
         em.getTransaction().begin();
 
