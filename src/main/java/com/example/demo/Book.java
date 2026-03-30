@@ -1,22 +1,22 @@
 package com.example.demo;
 
 public class Book {
-    private int id;
+    private Integer id;
     private String author;
     private String title;
 
     public Book() {}
 
-    public Book(int id, String author, String title) {
+    public Book(Integer id, String author, String title) {
         this.id = id;
         this.author = author;
         this.title = title;
     }
 
-    public int getId() { 
+    public Integer getId() { 
     	return id;
     }
-    public void setId(int id) { 
+    public void setId(Integer id) { 
     	this.id = id; 
     }
 

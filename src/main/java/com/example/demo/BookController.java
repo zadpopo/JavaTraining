@@ -10,10 +10,9 @@ import java.util.List;
 @RequestMapping("/api/books")
 public class BookController {
 
-    private final List<Book> books;
+	private final List<Book> books = new ArrayList<>();
 
     public BookController() {
-        books = new ArrayList<>();
         books.add(new Book(1, "One Piece", "Eiichiro Oda"));
         books.add(new Book(2, "Naruto", "Masashi Kishimoto"));
         books.add(new Book(3, "Dragon Ball", "Akira Toriyama"));
@@ -33,4 +32,13 @@ public class BookController {
                 .findFirst()
                 .orElse(null);
     }
+
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public Book addBook(@RequestBody Book newBook) {
+        newBook.setId(books.size() + 1);
+        books.add(newBook);
+        return newBook;
+    }
+
 }
