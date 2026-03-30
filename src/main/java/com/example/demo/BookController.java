@@ -13,9 +13,9 @@ public class BookController {
 	private final List<Book> books = new ArrayList<>();
 
     public BookController() {
-        books.add(new Book(1, "One Piece", "Eiichiro Oda"));
-        books.add(new Book(2, "Naruto", "Masashi Kishimoto"));
-        books.add(new Book(3, "Dragon Ball", "Akira Toriyama"));
+        books.add(new Book(1, "Eiichiro Oda", "One Piece"));
+        books.add(new Book(2, "Masashi Kishimoto", "Naruto"));
+        books.add(new Book(3, "Akira Toriyama", "Dragon Ball"));
     }
 
     @GetMapping
@@ -40,5 +40,18 @@ public class BookController {
         books.add(newBook);
         return newBook;
     }
+    
 
+	@GetMapping("/search")
+	@ResponseStatus(HttpStatus.OK)
+	public List<Book> search(
+	@RequestParam(required = false) String author,
+	@RequestParam(required = false) String title) {
+		return books.stream()
+            .filter(b -> author == null ||
+                    (b.getAuthor() != null && b.getAuthor().toLowerCase().contains(author.toLowerCase())))
+            .filter(b -> title == null ||
+                    (b.getTitle() != null && b.getTitle().toLowerCase().contains(title.toLowerCase())))
+            .toList();
+	}
 }
